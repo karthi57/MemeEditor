@@ -14,6 +14,10 @@ function Home() {
   }, []);
   console.log(memes);
   return (
+   <>
+    <header>
+      <h1 className="m-4 p-4 uppercase font-bold text-center text-2xl">Meme  Editor</h1>
+    </header>
     <div className="wrapper flex flex-wrap justify-center gap-8 m-2 p-2">
       {memes &&
         memes.map((meme, index) => (
@@ -29,6 +33,7 @@ function Home() {
           </div>
         ))}
     </div>
+    </>
   );
 }
 
